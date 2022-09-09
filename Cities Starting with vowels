@@ -1,0 +1,11 @@
+https://www.hackerrank.com/challenges/weather-observation-station-6/problem?isFullScreen=true
+
+select distinct city from station where city like 'a%' or city like 'e%' or city like 'i%' or city like 'o%' or city like 'u%';
+
+select distinct city from station where substring(city,1,1) in ('a','e','i','o','u');
+
+//SUBSTRING(string, start, length)
+
+string	  Required. The string to extract from
+start	    (Required). The start position. Can be both a positive or negative number. If it is a positive number, this function extracts from the beginning of the string. If it is a negative number, this function extracts from the end of the string
+length	  (Optional). The number of characters to extract. If omitted, the whole string will be returned (from the start position)
